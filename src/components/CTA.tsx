@@ -2,13 +2,8 @@ import { ArrowRight } from 'lucide-react';
 
 const CTA = () => {
   return (
-    <section className="py-32 relative overflow-hidden">
-      {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
-      <div className="bg-orb bg-orb-indigo w-[600px] h-[600px] left-1/2 -translate-x-1/2 top-0 animate-pulse-glow" />
-      <div className="bg-orb bg-orb-green w-[400px] h-[400px] left-1/4 bottom-0 animate-pulse-glow delay-200" />
-
-      <div className="container mx-auto px-6 relative z-10">
+    <section className="py-32">
+      <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Content */}
           <div className="glass-card p-12 md:p-16 rounded-3xl">
@@ -26,14 +21,18 @@ const CTA = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="/"
+                href="https://in.linkedin.com/company/medgency1"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary flex items-center gap-2 group"
               >
                 Connect with us
                 <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
               </a>
               <a
-                href="/"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=medgency3004@gmail.com&su=Schedule%20Demo%20Request&body=Hi%20MedGency%20team,%0D%0A%0D%0AI'd%20like%20to%20schedule%20a%20demo.%20Please%20let%20me%20know%20your%20availability.%0D%0A%0D%0AThanks!"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-secondary"
               >
                 Schedule Demo

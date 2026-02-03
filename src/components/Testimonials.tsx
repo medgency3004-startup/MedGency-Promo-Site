@@ -35,11 +35,8 @@ const Testimonials = () => {
       : testimonials.filter((t) => t.category === activeFilter);
 
   return (
-    <section id="testimonials" className="py-32 relative overflow-hidden">
-      {/* Background */}
-      <div className="bg-orb bg-orb-indigo w-[500px] h-[500px] -right-40 top-20 animate-pulse-glow" />
-
-      <div className="container mx-auto px-6 relative z-10">
+    <section id="testimonials" className="py-32 scroll-mt-24">
+      <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">

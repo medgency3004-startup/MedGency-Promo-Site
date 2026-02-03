@@ -27,11 +27,8 @@ const workflows = [
 
 const Workflows = () => {
   return (
-    <section id="workflows" className="py-32 relative overflow-hidden">
-      {/* Background */}
-      <div className="bg-orb bg-orb-indigo w-[500px] h-[500px] top-0 right-0 animate-pulse-glow" />
-
-      <div className="container mx-auto px-6 relative z-10">
+    <section id="workflows" className="py-32 scroll-mt-24">
+      <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-20">
           <div className="section-divider max-w-md mx-auto mb-8">
@@ -68,9 +65,9 @@ const Workflows = () => {
                 </div>
 
                 {/* Badge */}
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 mb-4">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 mb-4" style={{ backgroundColor: 'rgba(43, 59, 85, 1)', color: 'rgba(8, 12, 22, 1)' }}>
                   <span className="w-1.5 h-1.5 rounded-full bg-secondary" />
-                  <span className="text-xs text-muted-foreground">{workflow.badge}</span>
+                  <span className="text-xs" style={{ color: 'rgba(8, 12, 22, 1)' }}>{workflow.badge}</span>
                 </div>
 
                 {/* Title */}

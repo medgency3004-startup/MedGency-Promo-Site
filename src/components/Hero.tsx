@@ -3,18 +3,12 @@ import { ArrowRight } from 'lucide-react';
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Background Effects */}
-      <div className="absolute inset-0 bg-hero-gradient" />
-      <div className="bg-orb w-[600px] h-[600px] -top-40 -left-40 animate-pulse-glow" style={{background: 'radial-gradient(circle, rgba(220,38,38,0.6) 0%, rgba(34,197,94,0.5) 50%, rgba(220,38,38,0.3) 100%)'}} />
-      <div className="bg-orb bg-orb-green w-[400px] h-[400px] top-1/4 -right-20 animate-pulse-glow delay-200" />
-      <div className="bg-orb bg-orb-indigo w-[300px] h-[300px] bottom-20 left-1/4 animate-pulse-glow delay-400" />
-
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 animate-fade-up">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8 animate-fade-up" style={{ backgroundColor: 'rgba(43, 59, 85, 1)', color: 'rgba(255, 255, 255, 1)' }}>
             <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-            <span className="text-sm text-muted-foreground">Intelligent Emergency Medical Network</span>
+            <span className="text-sm" style={{ color: 'rgba(255, 255, 255, 1)' }}>Intelligent Emergency Medical Network</span>
           </div>
 
           {/* Main Heading */}
@@ -34,7 +28,7 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-5 animate-fade-up delay-300">
             <a
-              href="/"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfi2NtnhgpAc9dQZQRUg6fQcdONx0igLOaphUqE_xkkxNEV_Q/viewform"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary flex items-center gap-2 group"
@@ -43,10 +37,11 @@ const Hero = () => {
               <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
             <a
-              href="/"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=medgency3004@gmail.com&su=Schedule%20Demo%20Request&body=Hi%20MedGency%20team,%0D%0A%0D%0AI'd%20like%20to%20schedule%20a%20demo.%20Please%20let%20me%20know%20your%20availability.%0D%0A%0D%0AThanks!"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-secondary"
+              style={{ backgroundColor: 'rgba(43, 59, 85, 1)', color: 'rgba(248, 250, 252, 1)' }}
             >
               Schedule Demo
             </a>

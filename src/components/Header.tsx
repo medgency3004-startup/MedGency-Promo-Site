@@ -1,5 +1,22 @@
 import { useState, useEffect } from 'react';
 
+const HEADER_OFFSET = 100;
+
+const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  if (href.startsWith('#')) {
+    e.preventDefault();
+    const id = href.slice(1);
+    let el = document.getElementById(id);
+    // Fallback: Features link targets "built-for-emergency-responses"; use section if missing
+    if (!el && id === 'built-for-emergency-responses') {
+      el = document.getElementById('features');
+    }
+    if (el) {
+      const y = el.getBoundingClientRect().top + window.scrollY - HEADER_OFFSET;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  }
+};
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -30,18 +47,21 @@ const Header = () => {
         <nav className="hidden md:flex items-center gap-8">
           <a
             href="#workflows"
+            onClick={(e) => scrollToSection(e, '#workflows')}
             className="text-muted-foreground hover:text-foreground transition-colors duration-300"
           >
             Workflows
           </a>
           <a
-            href="#features"
+            href="#built-for-emergency-responses"
+            onClick={(e) => scrollToSection(e, '#built-for-emergency-responses')}
             className="text-muted-foreground hover:text-foreground transition-colors duration-300"
           >
             Features
           </a>
           <a
             href="#testimonials"
+            onClick={(e) => scrollToSection(e, '#testimonials')}
             className="text-muted-foreground hover:text-foreground transition-colors duration-300"
           >
             Who We Serve

@@ -42,12 +42,8 @@ const features = [
 
 const Features = () => {
   return (
-    <section id="features" className="py-32 relative overflow-hidden">
-      {/* Background */}
-      <div className="bg-orb bg-orb-green w-[600px] h-[600px] -left-60 top-1/4 animate-pulse-glow" />
-      <div className="bg-orb bg-orb-indigo w-[400px] h-[400px] right-0 bottom-20 animate-pulse-glow delay-300" />
-
-      <div className="container mx-auto px-6 relative z-10">
+    <section id="features" className="py-32">
+      <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-20">
           <div className="section-divider max-w-md mx-auto mb-8">
@@ -55,7 +51,7 @@ const Features = () => {
               Advanced Services
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 id="built-for-emergency-responses" className="text-4xl md:text-5xl font-bold text-foreground mb-6 scroll-mt-24">
             Built for emergency responses
           </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg leading-relaxed">
@@ -106,10 +102,6 @@ const Features = () => {
               </div>
             </div>
           </div>
-          
-          {/* Decorative elements */}
-          <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-primary to-purple-500 rounded-2xl blur-2xl opacity-30" />
-          <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-secondary to-teal-500 rounded-2xl blur-2xl opacity-30" />
         </div>
 
         {/* Features Grid */}
