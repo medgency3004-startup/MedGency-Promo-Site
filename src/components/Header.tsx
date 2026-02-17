@@ -36,7 +36,7 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-1 flex items-center justify-between h-16">
-        <a href="/" className="flex items-center gap-1 group transition-transform duration-300 group-hover:scale-110 mt-2 -ml-24">
+        <a href="/" className="flex items-center gap-1 group transition-transform duration-300 group-hover:scale-110 mt-2">
           <img 
             src="/logo.png" 
             alt="MedGency Logo" 
@@ -44,7 +44,7 @@ const Header = () => {
           />
         </a>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-8 mr-6">
           <a
             href="#workflows"
             onClick={(e) => scrollToSection(e, '#workflows')}
@@ -66,12 +66,12 @@ const Header = () => {
           >
             Who We Serve
           </a>
-          <a
+          {/*<a
             href="/"
             className="btn-primary text-sm px-6 py-2.5"
           >
             Get Started
-          </a>
+          </a>*/}
         </nav>
 
         <button className="md:hidden text-foreground p-2">
